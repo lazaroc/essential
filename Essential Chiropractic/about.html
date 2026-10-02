@@ -117,6 +117,15 @@
     .journey-step-text strong { display: block; font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 2px; }
     .journey-step-text span { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.4; }
 
+    /* FRONT DESK */
+    .frontdesk-section { background: var(--white); }
+    .frontdesk-header { text-align: center; max-width: 640px; margin: 0 auto 48px; }
+    .frontdesk-header .section-label { justify-content: center; }
+    .frontdesk-header p { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; }
+    .frontdesk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 880px; margin: 0 auto; }
+    .frontdesk-photo { border-radius: 20px; overflow: hidden; box-shadow: 0 24px 64px rgba(13,36,72,0.14); aspect-ratio: 3/4; background: var(--blue-light); }
+    .frontdesk-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block; }
+
     /* VALUES */
     .values-section { background: var(--cream); }
     .values-header { text-align: center; margin-bottom: 56px; }
@@ -161,6 +170,7 @@
     @media (max-width: 900px) {
       .doctor-grid, .doctor-grid.reverse, .together-grid, .booking-grid { grid-template-columns: 1fr; gap: 48px; direction: ltr; }
       .values-grid { grid-template-columns: 1fr; }
+      .frontdesk-grid { grid-template-columns: 1fr; max-width: 420px; }
       .doctor-photo-card { aspect-ratio: 4/3; max-height: 360px; }
       #dr-kristen .doctor-photo-wrap, #dr-greg .doctor-photo-wrap { max-width: 380px; margin: 0 auto; }
       #dr-kristen .doctor-photo-card, #dr-greg .doctor-photo-card { aspect-ratio: 3/4; max-height: none; }
@@ -381,6 +391,25 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRONT DESK TEAM -->
+<section class="frontdesk-section">
+  <div class="section-inner">
+    <div class="frontdesk-header">
+      <div class="section-label"><span></span>Our Front Desk Team</div>
+      <h2 class="section-title">Your First Smile at Essential Chiropractic</h2>
+      <p>Our front desk team is here to answer your calls, schedule your visits, and make every patient feel welcome.</p>
+    </div>
+    <div class="frontdesk-grid">
+      <div class="frontdesk-photo">
+        <img src="https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/2026%20Office%20Photos/Chiropractor%20Lees%20Summit%20-%20Essential%20Chiropractic%20-%202026%20Office%20Photos%20(6).jpg" alt="Essential Chiropractic front desk team member answering the phone at the reception desk" loading="lazy">
+      </div>
+      <div class="frontdesk-photo">
+        <img src="https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/2026%20Office%20Photos/Chiropractor%20Lees%20Summit%20-%20Essential%20Chiropractic%20-%202026%20Office%20Photos%20(5).jpg" alt="Front desk team member scheduling appointments at Essential Chiropractic in Lee's Summit" loading="lazy">
       </div>
     </div>
   </div>
